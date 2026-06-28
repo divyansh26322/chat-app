@@ -10,7 +10,7 @@ const TopBar = ({
   // AI Contact
   if (selectedUserId === "ai") {
     return (
-      <div className="absolute right-2 text-white w-full py-5 bg-gray-900 flex items-center gap-4 px-5">
+      <div className="flex items-center gap-4 px-5 py-5 bg-gray-900 text-white shrink-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -34,7 +34,7 @@ const TopBar = ({
   }
 
   return (
-    <div className="absolute right-2 text-white w-full py-5 bg-gray-900 flex items-center gap-4 px-5">
+    <div className="flex items-center gap-4 px-5 py-5 bg-gray-900 text-white shrink-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

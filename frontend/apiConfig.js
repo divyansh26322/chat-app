@@ -1,7 +1,7 @@
 // apiConfig.js
 let baseUrl;
 let socketUrl;
-if (import.meta.env.VITE_NODE_ENV === "production") {
+if (import.meta.env.MODE === "production") {
  baseUrl = "your-deployed-URL";
  socketUrl = "wss://your-deployed-url";
 } else {

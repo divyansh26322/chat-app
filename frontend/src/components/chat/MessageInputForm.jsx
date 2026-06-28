@@ -9,7 +9,7 @@ const MessageInputForm = ({
    return (
       <>
          {!!selectedUserId && (
-            <form onSubmit={sendMessage} className="relative m-4 w-full">
+            <form onSubmit={sendMessage} className="border-t border-gray-700 p-4 shrink-0">
                <input
                   type="search"
                   id="search-dropdown"
