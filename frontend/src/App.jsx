@@ -19,7 +19,7 @@ import { useEffect } from "react";
 import Profile from "./components/Profile.jsx";
 import { baseUrl } from "../apiConfig.js";
 
-import AIPage from "./pages/AiPage.jsx";
+import AiPage from "./pages/AiPage.jsx";
 
  const Layout = () => {
  const { isAuthenticated, checkAuth } = useAuth();
