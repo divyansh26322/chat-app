@@ -1,7 +1,7 @@
-import AIChat from "../components/AIChat";
+import AiChat from "../components/AiChat";
 
 const AIPage = () => {
-  return <AIChat />;
+  return <AiChat />;
 };
 
 export default AIPage;

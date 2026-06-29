@@ -64,7 +64,7 @@ const router = createBrowserRouter([
  },
  {
   path: "/ai",
-  element: <AIPage />
+  element: <AiPage />
 },
  ],
  },
