@@ -21,21 +21,21 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:4000",
-  "https://chat-app-112.vercel.app",
-  "https://swifty-chatty-appy.onrender.com"
+  "https://chat-app-112.vercel.app"
+  
 ];
 const corsOptions = {
-  origin: (origin, callback) => {
-    if (allowedOrigins.includes(origin) || !origin) {
+  origin(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));
     }
   },
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  optionsSuccessStatus: 204,
-  credentials: true, // Allow credentials like cookies
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
 };
+
 app.use(cors(corsOptions));
 app.use("/api/user", userRoute);
 app.use("/api/ai", aiRoute);
