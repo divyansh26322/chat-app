@@ -21,6 +21,7 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:4000",
+  "https://chat-app-112.vercel.app",
   "https://swifty-chatty-appy.onrender.com"
 ];
 const corsOptions = {
